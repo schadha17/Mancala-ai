@@ -98,6 +98,7 @@ def play_game():
 		control.screen.blit(textsurface,(10,10))
 		
 		pygame.display.update() #update helps you update small things at a time
+		#pygame.display.flip() #update helps you update small things at a time
 		clock.tick(1) #fps
 		if(rval[0] == True): time.sleep(5)
 		

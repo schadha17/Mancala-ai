@@ -49,8 +49,8 @@ class Board():
 		#pygame.draw.ellipse(self.screen, red, size, width=1)		
 
 		for i in range(2):
-			pygame.draw.ellipse(self.screen, red, self.p1.mancala[i], width=1)
-			pygame.draw.ellipse(self.screen, blue, self.p2.mancala[i], width=1)
+			pygame.draw.ellipse(self.screen, red, self.p1.mancala[i], 1)
+			pygame.draw.ellipse(self.screen, blue, self.p2.mancala[i], 1)
 
 		#size = (200, 50, 100, 50)
 		#pygame.draw.ellipse(self.screen, blue, size, width=1)
@@ -58,8 +58,8 @@ class Board():
 		#pygame.draw.ellipse(self.screen, blue, size, width=1)
 
 		for i in range(10):
-			pygame.draw.circle(self.screen, red, self.p1.cups[i], 25, width=1)
-			pygame.draw.circle(self.screen, blue, self.p2.cups[i], 25, width=1)
+			pygame.draw.circle(self.screen, red, self.p1.cups[i], 25, 1)
+			pygame.draw.circle(self.screen, blue, self.p2.cups[i], 25, 1)
 			
 	def update_game(self):
 		for i in (self.p1.stones_track.keys()):
